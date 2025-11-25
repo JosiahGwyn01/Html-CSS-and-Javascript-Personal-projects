@@ -1,0 +1,62 @@
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    background-image: url('Stage Image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.keys {
+    display: flex;
+    gap: 15px;
+}
+
+.key {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    font-size: 25px;
+    grid-gap: 0;
+    transition: all 0.1s ease;    
+}
+
+.key:hover {
+    transform: scale(1.1);
+    
+}
+
+.key.releasing {
+    transform: scale(1.1);
+    transition: all 0.15s ease;
+}
+
+.key.playing {
+    transform: scale(1.2);
+    border-color: darkorange;
+    box-shadow: 0 0 10px darkorange;
+}
+
+.Upper-text{
+    display: flex;
+    font-size: 25px;
+    color:white;
+    align-items: center;
+}
+
+.Bottom-text{
+    display: flex;
+    font-size: 10px;
+    color:darkorange;
+}
