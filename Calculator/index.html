@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Calculator Head -->
+        <h1>Standard Calculator</h1>
+        <div class="calculator-head">
+            <input type="text" id="output-field" placeholder="0" disabled>
+        </div>
+
+        <!-- Calculator Body -->
+        <div class="calculator-body">
+            <div class="button-row">
+                <button id="clear-entry">CE</button>
+                <button id="clear-all">AC</button>
+            </div>
+            <div class="button-row">
+                <button class="number-btn" data-value="7">7</button>
+                <button class="number-btn" data-value="8">8</button>
+                <button class="number-btn" data-value="9">9</button>
+                <button class="operator-btn" data-value="/">÷</button>
+            </div>
+            <div class="button-row">
+                <button class="number-btn" data-value="4">4</button>
+                <button class="number-btn" data-value="5">5</button>
+                <button class="number-btn" data-value="6">6</button>
+                <button class="operator-btn" data-value="*">x</button>
+            </div>
+            <div class="button-row">
+                <button class="number-btn" data-value="1">1</button>
+                <button class="number-btn" data-value="2">2</button>
+                <button class="number-btn" data-value="3">3</button>
+                <button class="operator-btn" data-value="-">-</button>
+            </div>
+                <div class="button-row">
+                <button class="number-btn" data-value="0">0</button>
+                <button id="decimal">.</button>
+                <button id="equals">=</button>
+                <button class="operator-btn" data-value="+">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
